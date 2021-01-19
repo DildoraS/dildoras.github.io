@@ -1,0 +1,414 @@
+*{
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Simonetta";
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/simonetta-v10-latin-regular.woff2') format('woff2'),
+  url('../fonts/simonetta-v10-latin-regular.woff') format('woff'); 
+}
+@font-face {
+  font-family: "Arima Madurai";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/arima-madurai-v5-latin-regular.woff2") format("woff2"),
+  url("../fonts/arima-madurai-v5-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Arima Madurai";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/arima-madurai-v5-latin-700.eot"),
+  url("../fonts/arima-madurai-v5-latin-700.woff2") format("woff2"),
+  url("../fonts/arima-madurai-v5-latin-700.woff") format("woff");
+}
+body{
+  font-family: "Arima Modurai";
+  background-color: rgb(34, 33, 36);
+  
+} 
+.bg{
+  min-height: 100vh;
+  background:  
+  linear-gradient(
+  to bottom,
+  rgba(22,22,22,.3) 
+  0,rgba(22,22,22,.7) 
+  80%,rgb(35, 34, 37) 
+  100%),
+  url(../img/noutFonGlobus.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container{
+  width: 1200px;
+  margin: auto;
+  padding: 5px;
+}
+
+a{
+  text-decoration: none;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style-type: none;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.nav__logo{
+  padding: 5px;
+  font-size: 35px;
+  color:  rgb(179, 130, 1);
+  border-bottom: 1px solid transparent;
+}
+
+.nav__logo:hover{
+  color: rgb(179, 130, 1);
+  border-bottom: 1px solid rgb(179, 130, 1);
+}
+
+.nav__list{
+  max-width: 50%;
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-list-item__link{
+  color:  rgb(179, 130, 1);
+  margin-left: 20px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  border-bottom: 1px solid transparent;
+}
+.nav-list-item__link:hover{
+  color: rgb(179, 130, 1);
+  border-bottom: 1px solid rgb(179, 130, 1);
+}
+.nav-list-item__link{
+  transition: 0.2s;
+}
+.about{
+  max-width: 1000px;
+  margin: 0 auto;
+  
+}
+.about__title{
+  font-size: 70px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 150px;
+  text-align: center;
+}
+.about__subtitle{
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+}
+.about-subtitle__span{
+  color: rgb(179, 130, 1);
+}
+.about__resume{
+  display: flex;
+  justify-content: center;
+}
+.about__resume-link{
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+}
+.about__resume-link:hover, .about__resume-link:active{
+  color: rgb(179, 130, 1);
+  border: 1px solid rgb(179, 130, 1);
+  box-shadow: 0px 0px 15px 1px rgb(179, 130, 1);
+}
+.about__resume-link{
+  transition: 0.2s;
+}
+.about-contact__item{
+  color: rgb(179, 130, 1);
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid rgb(179, 130, 1);
+  border-radius: 50%;
+  position: fixed;
+  box-shadow: 0px 0px 15px 1px rgb(179, 130, 1);
+}
+.about-contact__item:hover{
+   box-shadow: 0px 0px 20px 1px rgb(179, 130, 1);
+}
+.about-contact__item{
+  transition: 0.2s;
+}
+.about-contact__item--tel{
+  position: fixed;
+  bottom: 35px;
+  right: 25px;
+}
+.about-contact__item--mail{
+  position: fixed;
+  bottom: 95px;
+  right: 25px;
+}
+
+/* -------------------IKKINCHI QISM---------- */
+.ap{
+  margin: 80px auto;
+}
+.ap__container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+.ap__texts{
+  width: 60%;
+}
+.ap__title{
+  font-size: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+.ap__subtitle, .ap__subti_block{
+  font-size: 20px;
+  line-height: 25px;
+}
+.ap__button{
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  
+  font-size: 18px;
+}
+.ap__button:hover, .ap__button:active{
+  border: 1px solid rgb(179, 130, 1);
+  color: rgb(179, 130, 1);
+}
+.ap__button{
+  transition: 0.2s;
+}
+.ap__button:focus{
+  outline: none;
+}
+.ap__img{
+  width: 400px;
+  height: 400px;
+  padding: 15px;
+  border: 1px solid rgb(179, 130, 1);
+}
+
+
+/*  --------------UCHINCHI QISM-----------  */
+
+
+.p__header{
+  color: rgb(255, 255, 255);
+}
+.p_title{
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.p_subtitle{
+  color: rgb(179, 130, 1);
+  font-size: 25px;
+  text-align: center;
+}
+.p__boxs{
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*align-items: stretch;*/
+  justify-content: space-around;
+}
+.p-boxs__item{
+  width: 350px;
+  color: aliceblue;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid rgba(179, 130, 1, .6);
+}
+
+.p-boxs__item > a{
+  display: block;
+}
+
+.p-boxs-item__img{
+  width: 100%;
+  height: 200px;
+ }
+
+.p-boxs-item__main{
+  text-align: center;
+  background-color: rgba(179, 130, 1, .6);
+  padding: 40px;
+}
+.pim__title{
+  font-size: 30px;
+  margin: 0;
+}
+.pim_subtitle{
+  font-size: 75px;
+  padding-bottom: 10px;
+}
+.pim__link{
+  display: inline-block;
+  color: white;
+  padding: 8px;
+  border: 1px solid #fff;
+  margin-top: 20px;
+}
+.pim__link:hover, .pim__link:active{
+  border-radius: 10px;
+}
+.pim__link{
+  transition: 0.2s;
+}
+
+
+/* --------------3-qism footer------------ */
+.footer{
+  background-color: rgb(12, 12, 12);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+}
+.footer-about__title, .footer-contact__title{
+  font-size: 30px;
+}
+.footer-about__subtitle{
+  font-size: 18px;
+}
+.footer__contact{
+  display: flex;
+  flex-direction: column;
+}
+.footer-contact__item{
+  font-size: 18px;
+  color: white;
+  padding: 5px;
+}
+.container-footer{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/* rgb(179, 130, 1) 
+
+rgb(35, 34, 37) */
+
+
+
+@media(max-width: 1100px){
+  .container{
+    width: 95%;
+  }
+
+  .ap__texts{
+    width: 50%;
+    margin-right: 10px;
+  }
+}
+
+@media(max-width: 940px){
+  .nav-list-item__link{
+    font-size: 17px;
+  }
+  .ap__img{
+    width: 340px;
+    height: 340px;
+  }
+
+  .p-boxs__item{
+    width: 45%;
+  }
+}
+
+@media(max-width: 740px){
+  .nav-list-item__link{
+    margin-left: 10px;
+  }
+
+  .about__title{
+    font-size: 60px;
+  }
+
+  .ap__container{
+    flex-direction: column-reverse;
+  }
+
+  .ap__texts{
+    width: 95%;
+  }
+
+  .ap__img{
+    width: 80%;
+    height: auto;
+  }
+
+  .p-boxs__item{
+    /*width: 98%;*/
+    margin: 0 auto 15px;
+  /*  display: flex;
+    align-items: stretch;*/
+  }
+
+  /*.p-boxs__item > a{
+    width: 50%
+  }
+
+  .pim{
+    width: 50%;
+  }*/
+}
+
+@media(max-width: 615px){
+  .about__subtitle{
+    line-height: 40px;
+  }
+}
+
+@media(max-width:540px){
+  .about__title{
+    font-size: 55px;
+  }
+}
+
+@media(max-width: 520px){
+  .p-boxs__item{
+    flex-wrap: wrap;
+  }
+
+  .p-boxs__item > a{
+    width: 100%
+  }
+
+  .pim{
+    width: 100%;
+  }
+}
+
+@media(max-width:412px){
+   .about__title{
+    font-size: 50px;
+  }
+}
+
+
+
+
+
