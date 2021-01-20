@@ -361,24 +361,17 @@ rgb(35, 34, 37) */
   }
 
   .p-boxs__item{
-    /*width: 98%;*/
-    margin: 0 auto 15px;
-  /*  display: flex;
-    align-items: stretch;*/
+    width: 90%;
   }
 
-  /*.p-boxs__item > a{
-    width: 50%
-  }
-
-  .pim{
-    width: 50%;
-  }*/
 }
 
-@media(max-width: 615px){
+@media(width: 615px){
   .about__subtitle{
     line-height: 40px;
+  }
+  .p-boxs__item{
+    width: 95%;
   }
 }
 
@@ -389,10 +382,6 @@ rgb(35, 34, 37) */
 }
 
 @media(max-width: 520px){
-  .p-boxs__item{
-    flex-wrap: wrap;
-  }
-
   .p-boxs__item > a{
     width: 100%
   }
