@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.container{
+  width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+.header__nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  ;
+}
+.header__list{
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.header__link{
+  display: block;
+padding: 15px;
+text-decoration: none;
+color:#222;
+}
+.main__section-one{
+  background-image: url("../img/watches.jpg");
+  background-repeat: no-repeat;
+  background-position: right -160px center;
+  background-size: 450px;
+}
+.section__one-info-part{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 170px;  
+}
+.main__section-one-link{
+  padding: 15px;
+  width: 200px;
+  background-color: tomato;
+  text-decoration: none;
+  color:#fff;
+  margin: 0 0 20px 0;
+}
+.main__section-one{
+  border-bottom: 1px solid grey;
+  margin-bottom: 30px;  
+}
+.section__two-info{
+  display: flex;
+  margin-bottom: 40px;  
+}
+.section-two__text-wrapper{
+  width: 280px;
+  margin-right: 50px;
+}
+.section-two__text-heading{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+.section-two__heading{
+  width: 250px;1
+  font-size: 25px;
+}
+.section-two__item-info{
+  display: flex;
+  justify-content: space-between;
+}
+.section__item-info{
+  width: 370px;
+  align-self: center;
+  margin-bottom: 70px;  
+}
+.section__img{
+  width: 300px;  
+}
+.footer{
+  background-image: url("../img/runners.jpg");
+  background-size: cover;
+  background-position: center center ;
+  /*background-attachment: fixed;*/
+  background-repeat: no-repeat;
+  padding-bottom: 280px;
+  margin-top: 30px;
+}
+.footer-info__part{
+  width: 300px;
+padding-top: 80px;  
+  color: #fff;
+  margin-left:  auto;
+}
+.footer__heading{
+  font-size: 32px;  
+  font-weight: 700;  
+}
+.footer__paragraph{
+  margin: 40px 0;  
+}
+.link{
+background-color: tomato;
+color:#fff;
+text-decoration: none;
+padding: 10px;
+}

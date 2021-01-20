@@ -1,0 +1,88 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(img/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	font-family: "Roboto";
+}
+.big-box{
+	width: 500px;
+	padding: 30px ;
+	margin: 60px auto 0;
+	background-color: white;
+	font-size: 18px;
+	border-radius: 4px;
+}
+.city-name{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	margin: 10px auto;
+}
+.city{
+	font-family: "Prompt", "Arial", sans-serif;
+	font-weight: 900;
+	font-size: 70px;
+	color: #2379bb;
+	line-height: 60px;
+}
+.city-box{
+	display: flex;
+    flex-direction: column;
+    color: gray;
+    text-transform: uppercase;
+    align-items: center;
+}
+.city1{
+	align-items: flex-start;
+}
+.city2{
+	align-items: flex-end;	
+}
+.chiziq{
+	width: 25px;
+	height: 5px;
+	background: gray;
+ }
+.gorizontal{
+	width: 300px;
+	display: flex;
+	flex: flex-start;
+	justify-content: space-between;
+	text-transform: uppercase;
+	margin: 50px 30px 30px;	
+}
+.vertikal{
+	display: flex;
+	flex-direction: column;
+	font-weight: bold;
+}
+.yozuv{
+	color: gray;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.box2{
+	margin-top: 40px;
+	display: flex;
+	font-weight: bold;
+}
+.vertikal2{
+	display: flex;
+	flex-direction: column;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+.gorizontal2{
+	display: flex;
+	flex-direction: column;
+}
+.qr-cod {
+	margin-left: 90px;
+}
