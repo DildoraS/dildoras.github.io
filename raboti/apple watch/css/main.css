@@ -3,6 +3,8 @@
 }
 body{
 	font-family: "Roboto", "Arial", sans-serif;
+	margin: 0;
+	padding: 0;
 }
 .container{
 	max-width: 1000px;
@@ -168,11 +170,18 @@ body{
 	margin-top: 15px;
 }
 .bg-container{
-	background-image: url(../img/runners.jpg);
+	width: 100%;
+	background-image:   linear-gradient(
+  to bottom,
+  rgba(22,22,22,.3) 
+  0,rgba(22,22,22,.7) 
+  80%,rgb(35, 34, 37) 
+  100%), url(../img/runners.jpg);
 	min-height: 80vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
+
 }
 .bg-box{
 	display: flex;
@@ -188,6 +197,7 @@ body{
 .bg-box h4{
 	color: white;
 	font-size: 40px;
+	margin-left: 15px;
 }
 .bg-box p{
 	color: white;
@@ -197,10 +207,12 @@ body{
 	margin-bottom: 50px;
 }
 .bg-box a{
+	display: inline-block;
+	padding: 8px 8px;
+	margin-bottom: 15px;
 	text-transform: uppercase;
 	background-color: #f34a4f;
 	color: #fff;
-	padding: 10px 15px;
 	text-decoration: none;
 	font-size: 12px;
 }
@@ -252,7 +264,7 @@ body{
 	}
 
 	.bg-box{
-		max-width: 700px;
+		/*max-width: 700px;*/
 	}
 	.bg-box p{
 		width: 400px;
@@ -286,7 +298,8 @@ body{
 	}
 
 	.keynote-container{
-		background-size:auto 70%;
+		background-size:auto 56%;
+		background-position-y: bottom;
 	}
 
 	.keynote-width{
@@ -310,32 +323,37 @@ body{
 	
 }
 
-@media (max-width: 400px) {
-	body{
+@media (max-width: 412px) {
+/*	body{
 		width: 700px;
-	}
+	}*/
 	.site__nav{
 		display: flex;
 		flex-direction: column;
-		max-width: 400px;
-		margin:0 auto;	
+		max-width: 80%;
+		margin: 0 auto;
+
 	}
 	.site-nav__list{
-		width: 400px;
-		margin:0 auto;
+		width: 100%;
+		margin: 10px auto 0;
+	}
+	.site-nav__link{
+		display: block;
+		width: 100%;
+		text-align: center;
 	}
 	.site-nav__img{
 		width: 80px;
 		margin: 0 auto;
 	}
 	.site-nav__menu{
-		max-width: 400px;
-		margin:0 auto;
+		max-width: 100%;
 		flex-direction: column-reverse;
 	}
 	.site-nav__input{
 		display: block;
-		max-width: 400px;
+		width: 100%;
 		margin: 10px auto;
 	}
 	.keynote-box{
@@ -343,6 +361,17 @@ body{
     }
 	.ul-test{
 		margin:0 auto;
+	}
+
+	.bg-box{
+		justify-content: center;
+	}
+	.bg-box p{
+		color: rgba(225,225,210);
+	}
+
+	.bg-box > div {
+		padding-bottom: 10px;
 	}
 
 
